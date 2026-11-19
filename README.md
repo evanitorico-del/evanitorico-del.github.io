@@ -91,8 +91,8 @@ Mon Portfolio[index.html](https://github.com/user-attachments/files/35088422/ind
 
 </body>
 </html>
-[style.css](https://github.com/user-attachments/files/35088428/style.css)
-:root {
+
+ :root {
   --bg: #ffffff;
   --text: #1f2937;
   --muted: #6b7280;
