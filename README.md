@@ -82,6 +82,7 @@ Mon Portfolio[index.html](https://github.com/user-attachments/files/35088422/ind
         <a href="https://www.linkedin.com/in/TON-PROFIL">LinkedIn</a>
       </p>
     </section>
+    
   </main>
 
   <footer>
