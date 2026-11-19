@@ -1,12 +1,12 @@
 # evanitorico-del.github.io
-Mon Portfolio[index.html](https://github.com/user-attachments/files/35088422/index.html)
+Mon Portfolio
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TON NOM – Portfolio</title>
+  <title>Evan RICO – Portfolio</title>
   <meta name="description" content="Portfolio de TON NOM">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,8 +20,8 @@ Mon Portfolio[index.html](https://github.com/user-attachments/files/35088422/ind
   </nav>
 
   <header class="hero">
-    <h1>Salut, je suis <span>TON NOM</span></h1>
-    <p class="subtitle">TON MÉTIER / TA SPÉCIALITÉ</p>
+    <h1>Salut, je suis <span>Evan RICO</span></h1>
+    <p class="subtitle">Alternant en BTS SIO option SISR</p>
     <a class="btn" href="#projects">Voir mes projets</a>
   </header>
 
