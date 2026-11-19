@@ -3,87 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TON NOM – Portfolio</title>
-  <meta name="description" content="Portfolio de TON NOM">
+  <title>Accueil – Evan RICO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#skills">Compétences</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header class="hero">
-    <h1>Salut, je suis <span>TON NOM</span></h1>
-    <p class="subtitle">TON MÉTIER / TA SPÉCIALITÉ</p>
-    <a class="btn" href="#projects">Voir mes projets</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Evan RICO</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
+  <section class="hero">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Salut, je suis <span>Evan RICO</span></h1>
+    <p class="subtitle">Alternant en BTS SIO option SISR<br>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+    <div class="actions">
+      <a class="btn" href="projets.html">Voir mes projets</a>
+      <a class="btn secondary" href="contact.html">Me contacter</a>
+    </div>
+  </section>
+
   <main>
-    <section id="about">
-      <h2>À propos</h2>
-      <p>
-        À MODIFIER : présente-toi en 3-4 phrases. Ton parcours, ce qui te
-        passionne, ce que tu recherches (stage, alternance, emploi, freelance).
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Compétences</h2>
-      <ul class="tags">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git / GitHub</li>
-        <li>Automatisation</li>
-        <li>TA COMPÉTENCE</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projets</h2>
-      <div class="grid">
-
-        <article class="card">
-          <h3>NOM DU PROJET 1</h3>
-          <p>Description courte du projet et de ce que tu as appris.</p>
-          <p class="stack">TECHNOS UTILISÉES</p>
-          <a href="https://github.com/evanitorico-del/NOM-DU-REPO">Voir le code →</a>
-        </article>
-
-        <article class="card">
-          <h3>Automatisation d'ordinateur</h3>
-          <p>J'ai automatisé un ordinateur de A à Z : la mise sous tension et l'ouverture des applications sont entièrement automatisées.</p>
-          <p class="stack">TECHNOS UTILISÉES</p>
-          <a href="https://github.com/evanitorico-del/NOM-DU-REPO">Voir le code →</a>
-        </article>
-
-        <article class="card">
-          <h3>NOM DU PROJET 3</h3>
-          <p>Description courte du projet et de ce que tu as appris.</p>
-          <p class="stack">TECHNOS UTILISÉES</p>
-          <a href="https://github.com/evanitorico-del/NOM-DU-REPO">Voir le code →</a>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Une question, une opportunité ? Écris-moi.</p>
-      <p class="links">
-        <a href="mailto:TON-EMAIL@exemple.com">TON-EMAIL@exemple.com</a>
-        <a href="https://github.com/evanitorico-del">GitHub</a>
-        <a href="https://www.linkedin.com/in/TON-PROFIL">LinkedIn</a>
-      </p>
-    </section>
+    <h2>Explorer</h2>
+    <div class="grid">
+      <a class="card link-card" href="apropos.html"><h3>À propos</h3><p>Mon parcours et mon alternance.</p></a>
+      <a class="card link-card" href="competences.html"><h3>Compétences</h3><p>Systèmes, réseaux, automatisation.</p></a>
+      <a class="card link-card" href="projets.html"><h3>Projets</h3><p>Mes réalisations techniques.</p></a>
+      <a class="card link-card" href="veille.html"><h3>Veille</h3><p>Ma veille technologique.</p></a>
+    </div>
   </main>
 
   <footer>
-    <p>© 2026 TON NOM</p>
+    <p>© 2026 Evan RICO · <a href="https://github.com/evanitorico-del">GitHub</a></p>
   </footer>
-
 </body>
 </html>
