@@ -57,7 +57,7 @@ Mon Portfolio[index.html](https://github.com/user-attachments/files/35088422/ind
         </article>
 
         <article class="card">
-          <h3>Automatisation d'ordinateur</h3>
+          <h3>Automatisation d'ordinateur 2</h3>
           <p>J'ai automatisé un ordinateur de A à Z : la mise sous tension et l'ouverture des applications sont entièrement automatisées.</p>
           <p class="stack">TECHNOS UTILISÉES</p>
           <a href="https://github.com/evanitorico-del/NOM-DU-REPO">Voir le code →</a>
