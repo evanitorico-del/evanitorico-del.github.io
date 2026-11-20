@@ -124,11 +124,11 @@ footer {
   nav { display: none; width: 100%; flex-direction: column; gap: 0.25rem; padding-top: 0.75rem; }
   nav.open { display: flex; }
 }
-.pdf-viewer {
+.cv-img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1 / 1.414;
-  min-height: 600px;
+  height: auto;
+  margin-top: 1rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  margin-top: 1rem;
 }
