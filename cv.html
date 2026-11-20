@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Evan RICO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Evan RICO</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="comptes-rendus.html">Comptes rendus AP</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="veille.html">Veille</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Mon CV</h1>
+    <p><a class="btn" href="cv.pdf" download>Télécharger mon CV (PDF)</a></p>
+
+    <iframe class="pdf-viewer" src="cv.pdf" title="CV d'Evan RICO"></iframe>
+  </main>
+
+  <footer>
+    <p>© 2026 Evan RICO · <a href="https://github.com/evanitorico-del">GitHub</a></p>
+  </footer>
+</body>
+</html>
