@@ -29,22 +29,50 @@
       <a class="btn" id="telecharger" href="#" download>Télécharger le PDF</a>
       <a class="btn secondary" id="nouvel-onglet" href="#" target="_blank">Ouvrir dans un onglet</a>
     </p>
-    <iframe class="pdf-viewer ap-viewer" id="viewer" title="Compte rendu d'AP"></iframe>
+
+    <p id="etat" class="muted">Chargement du document…</p>
+    <div id="pages" class="pdf-pages"></div>
   </main>
 
   <footer>
     <p>© 2026 Evan RICO · <a href="https://github.com/evanitorico-del">GitHub</a></p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
     var n = parseInt(new URLSearchParams(window.location.search).get("n"), 10);
     if (![1, 2, 3, 4].includes(n)) { n = 1; }
     var fichier = "ap" + n + ".pdf";
+
     document.getElementById("titre").textContent = "Compte rendu AP " + n;
     document.title = "AP " + n + " – Evan RICO";
-    document.getElementById("viewer").src = fichier + "#view=FitH";
     document.getElementById("telecharger").href = fichier;
     document.getElementById("nouvel-onglet").href = fichier;
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    var zone = document.getElementById("pages");
+    var etat = document.getElementById("etat");
+
+    pdfjsLib.getDocument(fichier).promise.then(function (pdf) {
+      etat.textContent = "";
+      var suite = Promise.resolve();
+      for (let i = 1; i <= pdf.numPages; i++) {
+        suite = suite.then(function () {
+          return pdf.getPage(i).then(function (page) {
+            var vp = page.getViewport({ scale: 2 });
+            var canvas = document.createElement("canvas");
+            canvas.width = vp.width;
+            canvas.height = vp.height;
+            zone.appendChild(canvas);
+            return page.render({ canvasContext: canvas.getContext("2d"), viewport: vp }).promise;
+          });
+        });
+      }
+    }).catch(function () {
+      etat.textContent = "Impossible d'afficher le document. Utilise le bouton « Télécharger le PDF ».";
+    });
   </script>
 </body>
 </html>
