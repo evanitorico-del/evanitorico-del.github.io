@@ -137,3 +137,11 @@ footer {
   height: 85vh;
   min-height: 500px;
 }
+.pdf-pages canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
