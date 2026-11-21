@@ -132,3 +132,8 @@ footer {
   border: 1px solid var(--line);
   border-radius: 8px;
 }
+.ap-viewer {
+  aspect-ratio: auto;
+  height: 85vh;
+  min-height: 500px;
+}
