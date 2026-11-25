@@ -150,3 +150,40 @@ footer {
   margin: 0 auto 2rem;
   color: var(--muted);
 }
+/* ===== Thème violet ===== */
+:root {
+  --bg: #1a1033;
+  --text: #f3eeff;
+  --muted: #b9a9e0;
+  --card: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.15);
+  --accent: #c4a1ff;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 0%, #5b21b6 0%, transparent 50%),
+    radial-gradient(circle at 85% 100%, #7e22ce 0%, transparent 45%),
+    #1a1033;
+  background-attachment: fixed;
+}
+
+.site-header {
+  background: rgba(26, 16, 51, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.card {
+  border: 1px solid var(--line);
+  backdrop-filter: blur(6px);
+}
+
+.btn {
+  background: linear-gradient(135deg, #8b5cf6, #c026d3);
+  color: #fff;
+}
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
