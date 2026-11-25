@@ -187,3 +187,43 @@ body {
   color: var(--accent);
   border: 1px solid var(--accent);
 }
+/* ===== Animation de fond ===== */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+body::before {
+  background: #8b5cf6;
+  top: -20vmax;
+  left: -15vmax;
+  animation: flotte1 18s ease-in-out infinite alternate;
+}
+
+body::after {
+  background: #c026d3;
+  bottom: -25vmax;
+  right: -20vmax;
+  animation: flotte2 22s ease-in-out infinite alternate;
+}
+
+@keyframes flotte1 {
+  to { transform: translate(30vmax, 20vmax) scale(1.2); }
+}
+@keyframes flotte2 {
+  to { transform: translate(-30vmax, -15vmax) scale(1.15); }
+}
+
+/* Respecte les personnes qui désactivent les animations */
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after { animation: none; }
+}
