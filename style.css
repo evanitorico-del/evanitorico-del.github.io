@@ -227,3 +227,20 @@ body::after {
   body::before,
   body::after { animation: none; }
 }
+/* ===== Lueur qui suit la souris ===== */
+.curseur-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196, 161, 255, 0.35) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Pas de souris sur téléphone : on masque */
+@media (hover: none) {
+  .curseur-glow { display: none; }
+}
