@@ -145,3 +145,8 @@ footer {
   border: 1px solid var(--line);
   border-radius: 8px;
 }
+.spec {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: var(--muted);
+}
