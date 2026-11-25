@@ -4,7 +4,7 @@
   --muted: #6b7280;
   --card: #f3f4f6;
   --line: #e5e7eb;
-  --accent: #2563eb;
+  --accent: #7c3aed;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -13,7 +13,7 @@
     --muted: #9aa4b2;
     --card: #161b22;
     --line: #262d36;
-    --accent: #58a6ff;
+    --accent: #a78bfa;
   }
 }
 
