@@ -244,3 +244,63 @@ body::after {
 @media (hover: none) {
   .curseur-glow { display: none; }
 }
+/* ===== Tableau d'analyse des sources ===== */
+main.wide { max-width: 1200px; }
+
+.synthese {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.synthese div {
+  flex: 1 1 140px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+.synthese strong { display: block; font-size: 1.8rem; color: var(--accent); }
+.synthese span { color: var(--muted); font-size: 0.9rem; }
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 1rem 0 2rem;
+}
+.analyse {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px;
+  font-size: 0.88rem;
+}
+.analyse th, .analyse td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.analyse th { background: var(--card); white-space: nowrap; }
+.analyse tbody tr:hover { background: var(--card); }
+.analyse .num { text-align: center; }
+.analyse.bareme { min-width: 700px; }
+.analyse.bareme th { text-align: left; }
+
+.analyse .source { min-width: 280px; }
+.analyse .source a { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+.analyse .source small { color: var(--muted); }
+.analyse .mots { min-width: 160px; color: var(--muted); }
+.analyse td:last-child { min-width: 300px; }
+
+.reco {
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.reco.ok { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+.reco.no { background: rgba(239, 68, 68, 0.2); color: #f87171; }
