@@ -23,7 +23,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="wide">
     <h1>Veille technologique</h1>
     <p>
       <strong>Sujet :</strong> les nouveaux virus et logiciels malveillants (malwares)
@@ -58,36 +58,172 @@
       <li><strong>Segmentation réseau :</strong> limiter la propagation d'une infection.</li>
     </ul>
 
-    <h2>Menaces relevées</h2>
-    <div class="grid">
+        <h2>Tableau d'analyse des sources</h2>
+    <p>
+      Chaque source est notée de 1 à 4 sur trois critères : <strong>pertinence</strong> (coef. 3),
+      <strong>date</strong> (coef. 4) et <strong>fiabilité</strong> (coef. 3).
+      Le score total est sur 40 : la source est retenue à partir de <strong>24</strong> points.
+    </p>
 
-      <article class="card">
-        <h3>NOM DU MALWARE</h3>
-        <p class="stack">DATE · TYPE (ex. ransomware)</p>
-        <p><strong>Fonctionnement :</strong> À COMPLÉTER (comment il infecte, ce qu'il fait).</p>
-        <p><strong>Impact :</strong> À COMPLÉTER (systèmes et secteurs touchés).</p>
-        <p><strong>Solutions :</strong> À COMPLÉTER (correctif, détection, mesures de protection).</p>
-        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
-      </article>
+    <div class="synthese">
+      <div><strong>10</strong><span>sources analysées</span></div>
+      <div><strong>9</strong><span>sources retenues</span></div>
+      <div><strong>1</strong><span>source écartée</span></div>
+      <div><strong>90 %</strong><span>taux de validation</span></div>
+    </div>
 
-      <article class="card">
-        <h3>NOM DU MALWARE</h3>
-        <p class="stack">DATE · TYPE</p>
-        <p><strong>Fonctionnement :</strong> À COMPLÉTER.</p>
-        <p><strong>Impact :</strong> À COMPLÉTER.</p>
-        <p><strong>Solutions :</strong> À COMPLÉTER.</p>
-        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
-      </article>
+    <p><a class="btn" href="tableau-analyse-sources.xlsx" download>Télécharger le tableau (Excel)</a></p>
 
-      <article class="card">
-        <h3>NOM DU MALWARE</h3>
-        <p class="stack">DATE · TYPE</p>
-        <p><strong>Fonctionnement :</strong> À COMPLÉTER.</p>
-        <p><strong>Impact :</strong> À COMPLÉTER.</p>
-        <p><strong>Solutions :</strong> À COMPLÉTER.</p>
-        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
-      </article>
+    <div class="table-wrap">
+      <table class="analyse">
+        <thead>
+          <tr>
+            <th class="num">N°</th>
+            <th>Titre, auteur, site et date</th>
+            <th>Mots clés</th>
+            <th class="num" title="Pertinence (coef. 3)">Pert.</th>
+            <th class="num" title="Date (coef. 4)">Date</th>
+            <th class="num" title="Fiabilité (coef. 3)">Fiab.</th>
+            <th class="num">Score</th>
+            <th>Décision</th>
+            <th>Commentaires</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="source">
+            <a href="https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html" target="_blank" rel="noopener">Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More</a>
+            <small>Ravie Lakshmanan · The Hacker News (thehackernews.com) · 09/11/2026</small>
+          </td>
+          <td class="mots">backdoor, CWPdoor, ransomware 3AM, vulnérabilités, correctifs</td>
+          <td class="num">3</td><td class="num">4</td><td class="num">3</td>
+          <td class="num"><strong>34</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Récapitulatif hebdomadaire très récent : backdoor CWPdoor, rançongiciel 3AM, correctifs à appliquer. Source spécialisée reconnue, mais article généraliste (pas centré sur un seul malware).</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="source">
+            <a href="https://cybelangel.com/fr/blog/des-pirates-informatiques-lies-a-la-chine-deployant-un-nouveau-rancongiciel-stormencryptor/" target="_blank" rel="noopener">China-Linked Hackers Deploy New StormEncryptor Ransomware</a>
+            <small>Leah Koonthamattam · CybelAngel (cybelangel.com) · 25/08/2026</small>
+          </td>
+          <td class="mots">StormEncryptor, ransomware, Storm-1175, N-central, EDR, sauvegardes</td>
+          <td class="num">4</td><td class="num">4</td><td class="num">2</td>
+          <td class="num"><strong>34</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Nouveau rançongiciel diffusé via une faille N-central. Solutions : correctifs, EDR, segmentation, sauvegardes hors ligne, MFA. Article de blog qui relaie une information de Microsoft : à recouper avec la source primaire.</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="source">
+            <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/" target="_blank" rel="noopener">JadePuffer agentic attacks now target AI model data with ransomware</a>
+            <small>Bill Toulas · BleepingComputer (bleepingcomputer.com) · 20/07/2026</small>
+          </td>
+          <td class="mots">JadePuffer, EncForge, ransomware, IA, Langflow, Docker</td>
+          <td class="num">4</td><td class="num">4</td><td class="num">3</td>
+          <td class="num"><strong>37</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Attaque menée par un agent IA qui chiffre des données de modèles d'IA (EncForge). Solutions : mettre à jour Langflow, restreindre l'accès au socket Docker, exécuter les conteneurs sans droits root.</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="source">
+            <a href="https://asec.ahnlab.com/en/94486/" target="_blank" rel="noopener">June 2026 Infostealer Trend Report</a>
+            <small>ATCP, AhnLab SEcurity intelligence Center (ASEC) · AhnLab ASEC (asec.ahnlab.com) · 14/07/2026</small>
+          </td>
+          <td class="mots">infostealer, LummaC2, Vidar, ClickFix, SEO poisoning</td>
+          <td class="num">3</td><td class="num">4</td><td class="num">3</td>
+          <td class="num"><strong>34</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Bilan mensuel des infostealers (Remus, ACRStealer, LummaC2, Vidar) diffusés via de faux cracks. Solutions : éviter les logiciels piratés, activer la double authentification, garder l'antivirus à jour.</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="source">
+            <a href="https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/" target="_blank" rel="noopener">New macOS ClickFix attack silently mounts DMGs to push infostealer</a>
+            <small>Non précisé (BleepingComputer) · BleepingComputer (bleepingcomputer.com) · 23/06/2026</small>
+          </td>
+          <td class="mots">macOS, ClickFix, infostealer, AMOS, faux CAPTCHA</td>
+          <td class="num">4</td><td class="num">4</td><td class="num">3</td>
+          <td class="num"><strong>37</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Un faux CAPTCHA pousse à coller une commande dans le Terminal pour installer l'infostealer AMOS. Solution : ne jamais exécuter une commande copiée depuis un site, garder Gatekeeper actif, activer la MFA.</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="source">
+            <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">Panorama de la cybermenace 2025 : La France toujours sous la pression des cyber attaquants</a>
+            <small>ANSSI (Agence nationale de la sécurité des systèmes d'information) · cyber.gouv.fr · 11/03/2026</small>
+          </td>
+          <td class="mots">ANSSI, cybermenace, exfiltration de données, équipements de bordure, NIS 2</td>
+          <td class="num">3</td><td class="num">4</td><td class="num">4</td>
+          <td class="num"><strong>37</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Source officielle française. Le thème est lié mais n'est pas centré sur les malwares : exfiltrations de données, équipements de bordure vulnérables, mesures de base NIS 2.</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="source">
+            <a href="https://www.cybermalveillance.gouv.fr/medias/2025/06/260204_FicheReflexe_Rancongiciels_Pro_SCREEN.pdf" target="_blank" rel="noopener">Les rançongiciels – Fiche réflexe (professionnels)</a>
+            <small>Cybermalveillance.gouv.fr (avec le ministère de l'Intérieur et l'ANSSI) · cybermalveillance.gouv.fr · 04/02/2026</small>
+          </td>
+          <td class="mots">rançongiciel, réflexes, sauvegardes, EDR, double authentification</td>
+          <td class="num">4</td><td class="num">4</td><td class="num">4</td>
+          <td class="num"><strong>40</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Solutions concrètes face à un rançongiciel : couper le réseau, ne pas payer, porter plainte, restaurer depuis une sauvegarde saine. Date non indiquée : déduite du code de version V260204 du document.</td>
+        </tr>
+        <tr>
+          <td class="num">8</td>
+          <td class="source">
+            <a href="https://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html" target="_blank" rel="noopener">New Osiris Ransomware Emerges as New Strain Using POORTRY Driver in BYOVD Attack</a>
+            <small>Ravie Lakshmanan · The Hacker News (thehackernews.com) · 22/01/2026</small>
+          </td>
+          <td class="mots">Osiris, ransomware, BYOVD, POORTRY, RDP, MFA</td>
+          <td class="num">4</td><td class="num">4</td><td class="num">3</td>
+          <td class="num"><strong>37</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Rançongiciel qui désactive l'antivirus via un pilote vulnérable (BYOVD). Solutions : surveiller les outils à double usage, restreindre RDP, MFA, liste blanche d'applications, sauvegardes hors site.</td>
+        </tr>
+        <tr>
+          <td class="num">9</td>
+          <td class="source">
+            <a href="https://unit42.paloaltonetworks.com/fr/phantomvai-loader-delivers-infostealers/" target="_blank" rel="noopener">PhantomVAI Loader fournit une gamme d'infostealers</a>
+            <small>Tom Fakterman · Unit 42 – Palo Alto Networks (unit42.paloaltonetworks.com) · 15/10/2025</small>
+          </td>
+          <td class="mots">PhantomVAI, loader, infostealer, hameçonnage, Katz Stealer</td>
+          <td class="num">4</td><td class="num">3</td><td class="num">3</td>
+          <td class="num"><strong>33</strong></td>
+          <td><span class="reco ok">Retenir</span></td>
+          <td>Chargeur diffusé par e-mails piégés (AsyncRAT, XWorm, FormBook, DCRat). Publié il y a un peu plus d'un an (note 3 à ajuster selon le barème). Recommandations centrées sur les produits de l'éditeur.</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td class="source">
+            <a href="https://tuxcare.com/fr/blog/royal-ransomware-gang/" target="_blank" rel="noopener">Le FBI, la CISA et le HHS mettent en garde contre les attaques des gangs de ransomwares royaux</a>
+            <small>L'équipe de relations publiques de TuxCare · TuxCare (tuxcare.com) · 14/03/2023</small>
+          </td>
+          <td class="mots">ransomware Royal, FBI, CISA, hameçonnage, RDP</td>
+          <td class="num">3</td><td class="num">1</td><td class="num">2</td>
+          <td class="num"><strong>19</strong></td>
+          <td><span class="reco no">À écarter</span></td>
+          <td>Article de 2023 (plus de 3 ans), publié sur un blog d'éditeur, sans conseils de protection explicites : écartée au profit de sources officielles et récentes.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
 
+    <h2>Barème de notation</h2>
+    <div class="table-wrap">
+      <table class="analyse bareme">
+        <thead><tr><th>Critère</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th></tr></thead>
+        <tbody>
+          <tr><td>Pertinence du thème</td><td>Aucune pertinence</td><td>Thème qui manque de lien</td><td>Thème en lien</td><td>Très pertinente</td></tr>
+          <tr><td>Date</td><td>Plus de 3 ans</td><td>2 à 3 ans</td><td>Moins d'un an</td><td>Année en cours</td></tr>
+          <tr><td>Fiabilité de la source</td><td>Source non crédible</td><td>Crédible mais non vérifiée</td><td>Vérifiée et fiable</td><td>Source très sûre</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <h2>Mes sources</h2>
@@ -107,7 +243,6 @@
       <li><strong>Traitement :</strong> je sélectionne les menaces pertinentes, je les résume et je note les solutions.</li>
     </ul>
   </main>
-
   <footer>
     <p>© 2026 Evan RICO · <a href="https://github.com/evanitorico-del">GitHub</a></p>
   </footer>
