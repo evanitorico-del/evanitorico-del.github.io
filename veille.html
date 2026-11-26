@@ -6,43 +6,106 @@
   <title>Veille – Evan RICO</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <script src="script.js"></script>
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">Evan RICO</a>
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
     <nav>
-  <a href="index.html">Accueil</a>
-  <a href="apropos.html">À propos</a>
-  <a href="competences.html">Compétences</a>
-  <a href="projets.html">Projets</a>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
       <a href="realisations-e6.html">Réalisations E6</a>
-  <a href="comptes-rendus.html">Comptes rendus AP</a>
-  <a href="cv.html">CV</a>
-  <a href="veille.html" class="active">Veille</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <a href="comptes-rendus.html">Comptes rendus AP</a>
+      <a href="cv.html">CV</a>
+      <a href="veille.html" class="active">Veille</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
     <h1>Veille technologique</h1>
-    <p>Les nouveaux virus et leurs solutions.</p>
+    <p>
+      <strong>Sujet :</strong> les nouveaux virus et logiciels malveillants (malwares)
+      qui apparaissent, et les solutions pour s'en protéger.
+    </p>
+
+    <h2>Pourquoi ce sujet</h2>
+    <p>
+      En tant que futur administrateur systèmes et réseaux (SISR), je dois protéger
+      les postes et les serveurs de mon entreprise. Suivre les nouvelles menaces
+      me permet d'anticiper les attaques et d'appliquer les bonnes mesures à temps.
+    </p>
+
+    <h2>Les grandes familles de menaces</h2>
+    <ul class="tags">
+      <li>Ransomware (rançongiciel)</li>
+      <li>Cheval de Troie</li>
+      <li>Ver</li>
+      <li>Spyware</li>
+      <li>Infostealer</li>
+      <li>Phishing</li>
+      <li>Botnet</li>
+    </ul>
+
+    <h2>Les solutions de protection</h2>
+    <ul class="plain">
+      <li><strong>Mises à jour :</strong> appliquer rapidement les correctifs système et logiciels.</li>
+      <li><strong>Antivirus / EDR :</strong> détecter et bloquer les comportements suspects.</li>
+      <li><strong>Sauvegardes :</strong> règle 3-2-1, avec une copie hors ligne.</li>
+      <li><strong>Sensibilisation :</strong> former les utilisateurs au phishing.</li>
+      <li><strong>Droits limités :</strong> moindre privilège et authentification multifacteur.</li>
+      <li><strong>Segmentation réseau :</strong> limiter la propagation d'une infection.</li>
+    </ul>
+
+    <h2>Menaces relevées</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>NOM DU MALWARE</h3>
+        <p class="stack">DATE · TYPE (ex. ransomware)</p>
+        <p><strong>Fonctionnement :</strong> À COMPLÉTER (comment il infecte, ce qu'il fait).</p>
+        <p><strong>Impact :</strong> À COMPLÉTER (systèmes et secteurs touchés).</p>
+        <p><strong>Solutions :</strong> À COMPLÉTER (correctif, détection, mesures de protection).</p>
+        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
+      </article>
+
+      <article class="card">
+        <h3>NOM DU MALWARE</h3>
+        <p class="stack">DATE · TYPE</p>
+        <p><strong>Fonctionnement :</strong> À COMPLÉTER.</p>
+        <p><strong>Impact :</strong> À COMPLÉTER.</p>
+        <p><strong>Solutions :</strong> À COMPLÉTER.</p>
+        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
+      </article>
+
+      <article class="card">
+        <h3>NOM DU MALWARE</h3>
+        <p class="stack">DATE · TYPE</p>
+        <p><strong>Fonctionnement :</strong> À COMPLÉTER.</p>
+        <p><strong>Impact :</strong> À COMPLÉTER.</p>
+        <p><strong>Solutions :</strong> À COMPLÉTER.</p>
+        <a href="LIEN-DE-LA-SOURCE" target="_blank">Lire la source →</a>
+      </article>
+
+    </div>
 
     <h2>Mes sources</h2>
     <ul class="plain">
-      <li><a href="https://www.cert.ssi.gouv.fr">CERT-FR</a> – alertes de sécurité</li>
-      <li>TA SOURCE</li>
+      <li><a href="https://www.cert.ssi.gouv.fr" target="_blank">CERT-FR</a> – alertes et avis de sécurité officiels</li>
+      <li><a href="https://www.cybermalveillance.gouv.fr" target="_blank">Cybermalveillance.gouv.fr</a> – menaces et conseils</li>
+      <li><a href="https://www.ssi.gouv.fr" target="_blank">ANSSI</a> – rapports sur la cybermenace</li>
+      <li><a href="https://www.bleepingcomputer.com" target="_blank">BleepingComputer</a> – actualité des malwares</li>
+      <li><a href="https://thehackernews.com" target="_blank">The Hacker News</a> – actualité cybersécurité</li>
+      <li><a href="https://www.lemagit.fr" target="_blank">LeMagIT</a> – actualité informatique en français</li>
     </ul>
 
-    <h2>Mes derniers articles</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>TITRE DE L'ARTICLE</h3>
-        <p class="stack">DATE</p>
-        <p>Résumé en 2 phrases.</p>
-        <a href="LIEN-DE-LA-SOURCE">Lire la source →</a>
-      </article>
-    </div>
+    <h2>Ma méthode de veille</h2>
+    <ul class="plain">
+      <li><strong>Fréquence :</strong> À COMPLÉTER (ex. 2 fois par semaine).</li>
+      <li><strong>Outils :</strong> À COMPLÉTER (ex. flux RSS, abonnement aux alertes CERT-FR).</li>
+      <li><strong>Traitement :</strong> je sélectionne les menaces pertinentes, je les résume et je note les solutions.</li>
+    </ul>
   </main>
 
   <footer>
